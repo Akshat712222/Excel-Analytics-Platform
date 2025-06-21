@@ -1,0 +1,31 @@
+{
+  "name": "excel-analytics-platform",
+  "version": "1.0.0",
+  "description": "A platform for analyzing Excel data",
+  "scripts": {
+    "start": "cd backend && npm run start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "setup-git": "node setup-git.js",
+    "deploy": "vercel"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@tailwindcss/postcss": "^4.1.10",
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "framer-motion": "^12.18.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.1",
+    "mongodb": "4.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
